@@ -1,6 +1,6 @@
-# Canary DMS Plugins
+# Canary DUX Plugins
 
-Plugins for [Dank Material Shell](https://github.com/AvengeMedia/DankMaterialShell). Each plugin has its own repository; this one pulls them in as submodules so they can be cloned and linked in one go.
+Plugins for [Dux Shell](https://github.com/duxlabs-dev/dux-shell). Each plugin has its own repository; this one pulls them in as submodules so they can be cloned and linked in one go.
 
 | Plugin | ID | Repository | What it does |
 |---|---|---|---|
@@ -10,17 +10,17 @@ Plugins for [Dank Material Shell](https://github.com/AvengeMedia/DankMaterialShe
 
 ## Installation
 
-Clone with the submodules and link the plugins you want into the DMS plugins folder:
+Clone with the submodules and link the plugins you want into the Dux Shell plugins folder:
 
 ```bash
-git clone --recurse-submodules https://github.com/HotcocoaCanary/Canary-DMS-Plugins.git
-ln -s "$PWD/Canary-DMS-Plugins/DockerDashboard" ~/.config/DankMaterialShell/plugins/dockerDashboard
-ln -s "$PWD/Canary-DMS-Plugins/ClaudeUsageStats" ~/.config/DankMaterialShell/plugins/claudeUsageStats
-ln -s "$PWD/Canary-DMS-Plugins/TailscaleDashboard" ~/.config/DankMaterialShell/plugins/tailscaleDashboard
+git clone --recurse-submodules https://github.com/HotcocoaCanary/Canary-DUX-Plugins.git
+ln -s "$PWD/Canary-DUX-Plugins/DockerDashboard" ~/.config/dms/plugins/dockerDashboard
+ln -s "$PWD/Canary-DUX-Plugins/ClaudeUsageStats" ~/.config/dms/plugins/claudeUsageStats
+ln -s "$PWD/Canary-DUX-Plugins/TailscaleDashboard" ~/.config/dms/plugins/tailscaleDashboard
 dms ipc call plugin-scan scan
 ```
 
-Then enable them under DMS Settings > Plugins and add them to the bar. See each plugin's README for details.
+Then enable them under Settings > Plugins and add them to the bar. See each plugin's README for details.
 
 A single plugin can also be cloned on its own — the plugin repositories have their `plugin.json` at the root, so the clone is what gets linked into the plugins folder.
 
